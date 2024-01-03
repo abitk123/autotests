@@ -1,0 +1,15 @@
+stages:
+  - pre
+  - test
+
+install:
+  stage: pre
+  image: node
+  script:
+    - npm i
+
+lint:
+  stage: test
+  image: node
+  script:
+    - npm lint

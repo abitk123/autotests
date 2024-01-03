@@ -13,6 +13,9 @@
 
         "comma-dangle": 1,
         "indent": ["error", 4],
-        "linebreak-style": ["error", "windows"]
+        "linebreak-style": ["error", "windows"],
+        "no-unused-vars":"off",
+        "linebreak-style":"off",
+        "no-console":"off"
       }
   }
