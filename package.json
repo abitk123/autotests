@@ -4,8 +4,34 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "lint-fix": "eslint cdp/ webdriver/ cypress/ --fix",
+    "wdio-cdp": "wdio ./webdriverio-cdp.config.js",
+    "wdio": "wdio ./webdriverio.config.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^8.27.1",
+    "@wdio/devtools-service": "^8.27.0",
+    "@wdio/local-runner": "^8.27.0",
+    "@wdio/mocha-framework": "^8.27.0",
+    "@wdio/selenium-standalone-service": "^8.5.6",
+    "@wdio/spec-reporter": "^8.27.0",
+    "axios": "^1.6.3",
+    "cypress": "^13.6.2",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-mocha": "^10.2.0",
+    "got": "^14.0.0",
+    "pngjs": "^7.0.0",
+    "puppeteer": "^21.6.1",
+    "trim-newlines": "^5.0.0",
+    "wdio-chromedriver-service": "^8.1.1"
+  },
+  "devDependencies": {
+    "chai": "^5.0.0",
+    "eslint-plugin-cypress": "^2.15.1"
+  }
 }
