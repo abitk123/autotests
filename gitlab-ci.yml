@@ -7,9 +7,12 @@ install:
   image: node
   script:
     - npm i
+  artifacts:
+    path:
+      - node_modules/
 
 lint:
   stage: test
   image: node
   script:
-    - npm lint
+    - npm run lint
